@@ -8,11 +8,16 @@
       <?php
       include_once './UniversalConnect.php';
       /**
-       * Description of ConnectClient
+       * Short description of the class ConnectClient
+       * 
        * @author Marcin
        * Class ConnectClient -> is any class that requires a connection.
        */
       class ConnectClient{
+          /**
+           *
+           * @var $hookup hook to db
+           */
           private $hookup;
           public function __construct() {
               $this->hookup = UniversalConnect::doConnect();
